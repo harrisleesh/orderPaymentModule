@@ -1,10 +1,8 @@
 package com.bordercollie.test.paymentsystem.domain.controller;
 
-import com.bordercollie.test.paymentsystem.domain.service.KakaoPay;
+import com.bordercollie.test.paymentsystem.domain.service.KakaoPayService;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import lombok.extern.java.Log;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +18,7 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public class KakaoPayController {
 
-    private final KakaoPay kakaopay;
+    private final KakaoPayService kakaopay;
 
     @GetMapping("/kakaoPay")
     public void kakaoPayGet() {

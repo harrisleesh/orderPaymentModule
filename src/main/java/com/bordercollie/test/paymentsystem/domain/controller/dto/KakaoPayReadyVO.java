@@ -1,4 +1,4 @@
-package com.bordercollie.test.paymentsystem.domain.service;
+package com.bordercollie.test.paymentsystem.domain.controller.dto;
 
 import lombok.Data;
 

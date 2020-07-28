@@ -1,5 +1,7 @@
 package com.bordercollie.test.paymentsystem.domain.service;
 
+import com.bordercollie.test.paymentsystem.domain.controller.dto.KakaoPayApprovalVO;
+import com.bordercollie.test.paymentsystem.domain.controller.dto.KakaoPayReadyVO;
 import lombok.extern.java.Log;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -12,12 +14,11 @@ import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Random;
 
 
 @Service
 @Log
-public class KakaoPay {
+public class KakaoPayService {
     private static final String HOST = "https://kapi.kakao.com";
 
     private KakaoPayReadyVO kakaoPayReadyVO;

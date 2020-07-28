@@ -1,9 +1,9 @@
-package com.bordercollie.test.paymentsystem.domain.service;
+package com.bordercollie.test.paymentsystem.domain.controller.dto;
 
 import lombok.Data;
 
 @Data
-public class CardVO {
+public class KakaoPayCardVO {
     private String purchase_corp, purchase_corp_code;
     private String issuer_corp, issuer_corp_code;
     private String bin, card_type, install_month, approved_id, card_mid;
